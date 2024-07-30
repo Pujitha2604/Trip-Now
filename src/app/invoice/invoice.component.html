@@ -1,0 +1,28 @@
+<div class="confirm-body">
+    <div class="content">
+        <div class="success-icon">
+            <i class="material-icons success-icon-inner">check_circle</i>
+        </div>
+ 
+        <div class="line">
+            <h1>Your Booking is Successful!</h1>
+            <h3>Your Transaction id - {{ this.data.trans_id }}</h3>
+        </div>
+ 
+        <hr class="divider-line" />
+ 
+        <div class="success-message">
+            <h4>Name: <span style="margin-left: 84px;">{{ this.data.firstName + " " + this.data.lastName }}</span></h4>
+            <h4>Email: <span style="margin-left: 86px;">{{ this.data.email }}</span></h4>
+            <h4>Date of Travel: <span style="margin-left: 24px;">{{ this.data.date }}</span></h4>
+            <h4>Travellers: <span style="margin-left: 54px;">{{ this.data.count }}</span></h4>
+            <h4>Package: <span style="margin-left: 65px;">{{ this.data.title }}</span></h4>
+            <h4>Amount: <span style="margin-left: 68px;">{{ this.data.price * this.data.count }}</span></h4>
+            <h4>Payment <br>Status: <span style="margin-left: 80px;">{{ this.data.payment }}</span></h4>
+        </div>
+        <div class="container">
+            <!-- <button class="goback" routerLink='/'>Home</button> -->
+            <button class="goback" routerLink='/profile'>Profile</button>
+          </div>
+    </div>
+</div>

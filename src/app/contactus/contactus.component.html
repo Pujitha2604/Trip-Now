@@ -1,0 +1,54 @@
+<!-- modal -->
+<ng-template #demoModal let-modal>
+    <div class="modal-header">
+      <h2 class="modal-title" id="exampleModalLabel" style="color: #04AA6D;">Success</h2>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="modal.dismiss('Cross click')"
+      ></button>
+    </div>
+    <div class="modal-body">Details Submitted</div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Cross click')">
+        Close
+      </button>
+    </div>
+  </ng-template>
+  
+  <!-- bottom form -->
+  
+  <button class="open-button" (click)="openForm()">Contact Us</button>
+  
+  <div class="form-popup" id="myForm">
+    <form class="form-container" [formGroup] = "userForm" (ngSubmit)="onSubmit(demoModal)">
+      <h1>Contact Us</h1>
+  
+      <label><b>Name*</b></label>
+      <input type="text" placeholder="Enter Name" formControlName = "name">
+      <span *ngIf="!fCon.name.valid && fCon.name.dirty" class="help-block">*Only Alphabets (lim. 20), avoid spaces</span>
+      
+      <br>
+      <label><b>Email*</b></label>
+      <input type="text" placeholder="Enter Email" formControlName = "email" required>
+      <span *ngIf="!fCon.email.valid && fCon.email.dirty" class="help-block">*Enter valid Email</span>
+      
+      <br>
+      <label><b>Phone No.*</b></label>
+      <input type="text" placeholder="Enter Phone No." formControlName = "phno">
+      <span *ngIf="!fCon.phno.valid && fCon.phno.dirty" class="help-block">*Enter valid Number</span>
+  
+      <br>
+      <label><b>Query</b></label>
+      <textarea formControlName = "query" placeholder="Enter Query"></textarea>
+      <span *ngIf="!fCon.query.valid && fCon.query.dirty" class="help-block">*Enter Query</span>
+  
+      <div class="parent">
+  
+        <button type="submit" class="btn" data-toggle="modal" data-target="#myModal" [disabled]="!userForm.valid">Submit</button>
+        <button type="button" class="btn cancel" (click)="closeForm()">Close</button>
+      </div>
+    </form>
+  
+  </div>

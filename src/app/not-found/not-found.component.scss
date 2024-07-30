@@ -1,0 +1,45 @@
+.container {
+    text-align: center;
+    padding: 250px;
+  
+    h2 {
+      font-size: 100px; // Adjust the font size as needed
+      margin-bottom: 20px;
+      color: rgba(0, 0, 0, 0.461);
+    }
+  
+    p {
+      font-size: 18px; // Adjust the font size as needed
+      margin-bottom: 20px;
+    }
+  
+    .goback {
+      margin-top: 20px;
+      padding: 10px 40px;
+      border-radius: 20px;
+      background-color: rgb(255, 222, 37);
+      cursor: pointer;
+      font-size: 2em;
+    }
+
+    .goback:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact {
+        margin-top: 20px;
+        padding: 10px 40px;
+        border-radius: 20px;
+        margin-left: 30px;
+      }
+
+    .contact:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  
+    .error-message {
+      font-size: 24px; // Adjust the font size as needed
+      color: rgba(0, 0, 0, 0.479)(0, 0, 0); // or any other color you prefer
+    }
+  }
+  

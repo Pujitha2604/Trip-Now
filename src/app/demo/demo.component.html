@@ -1,0 +1,11 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName">
+    <span *ngIf="fCon.firstName.errors && fCon.firstName.touched">Valid</span>
+  
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" formControlName="lastName">
+    <button type="submit">Submit</button>
+  
+</form>

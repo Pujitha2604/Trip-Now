@@ -1,0 +1,40 @@
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>Trip</span>Now</a>
+
+    <nav class="navbar">
+        <!-- <a [routerLink]="['/packages']">Packages</a>
+        <a [routerLink]="['/gallery']">Exclusive</a>
+        <a [routerLink]="['/review']">Review</a> -->
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/packages" routerLinkActive="active">Packages</a>
+        <a routerLink="/bike-trips" routerLinkActive="active">Bike Trips</a>
+        <a routerLink="/review" routerLinkActive="active">Review</a>
+    </nav>
+
+    <div class="icons" routerLink="/profile">
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+   
+
+</header>
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+</div>

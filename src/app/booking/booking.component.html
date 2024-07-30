@@ -1,0 +1,193 @@
+<!-- start of breadcrumb header -->
+<div class="top-bread">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <div [routerLink]='["/packages"]' class="back">
+        <i class="bi bi-chevron-left"></i>
+      </div>
+      <li class="breadcrumb-item cur">Package Summary</li>
+    </ol>
+  </nav>
+</div>
+<hr>
+<!-- end of breadcrumb header -->
+
+<div class="middle-book">
+  <!-- right hand side middle book -->
+  <div class="user-detail">
+    <div class="contact-head">
+      <h1><strong>Booking Details</strong></h1>
+      <p>Please enter valid email, as you'll receive confirmation invoice and updates about your booking.</p>
+    </div>
+
+    <div class="gap">.</div>
+
+    <div class="contact-form">
+      <form [formGroup]="detForm">
+        <div class="label-head">
+          <label>First Name*</label>
+          <label>Last Name*</label>
+        </div>
+        <div class="name-head">
+          <input type="text" class="name capitalize" formControlName="fname">
+          <input type="text" class="name capitalize" formControlName="lname">
+        </div>
+        <div class="error-head">
+          <div class="name-error">
+            <span *ngIf="fCon.fname.errors && fCon.fname.touched" class="help-block">*Only Alphabets
+              (lim. 20)</span>
+          </div>
+          <div class="name-error">
+            <span *ngIf="fCon.lname.errors && fCon.lname.touched" class="help-block">*Only Alphabets
+              (lim. 20)</span>
+          </div>
+        </div>
+
+        <div class="gap">.</div>
+
+        <br>
+        <label class="email">Email*</label>
+        <br>
+        <input type="text" class="email" formControlName="email">
+        <br>
+        <span style="margin-left: 5.25%;" *ngIf="!fCon.email.valid && fCon.email.touched" class="help-block">*Enter Valid
+          Email</span>
+        <br>
+
+        <div class="gap">.</div>
+
+        <div>
+          <label style="margin-left: 5.25%;">Phone Number*</label>
+          <label style="margin-left: 38%">Age*</label>
+        </div>
+        <div class="name-head">
+          <input type="text" class="name" formControlName="phno">
+          <input type="number" class="name" formControlName="doj" min="18" max="100">
+          <!-- <input type="date" class="name" formControlName="doj"> -->
+        </div>
+
+        <div class="error-head">
+          <div class="name-error">
+            <span *ngIf="fCon.phno.invalid && fCon.phno.touched" class="help-block">*Enter Valid
+              Phone No.</span>
+          </div>
+          <div class="name-error">
+            <span *ngIf="!fCon.doj.valid && fCon.doj.touched" class="help-block">*Age should be
+              above 17</span>
+          </div>
+        </div>
+
+        <br>
+        <div class="name-head" style="justify-content: start;">
+          <input type="checkbox" style="margin-left:5.25%;"> &nbsp;
+          <p style="margin-top: 1.5%;"> Receive SMS updates about your booking. Message rates may apply.</p>
+        </div>
+        <!-- Promo -->
+        <div class="promo">
+          <div class="promo-head">
+            <h1>Promo Code</h1>
+            <hr>
+          </div>
+
+          <label>Enter Promo Code</label>
+          <br>
+          <input type="text" style="width: 40%;" formControlName="code">
+        </div>
+
+        <div class="submit-btn">
+          <button type="submit" class="contact-btn" (click)="onSubmit()" [disabled]="!detForm.valid">Next</button>
+        </div>
+      </form>
+
+    </div>
+
+
+    <!-- left hand side middle book -->
+  </div>
+
+  <div class="book-card">
+    <!-- book-card 1 -->
+    <div class="book-card1">
+      <h1><strong>Review Order Details</strong></h1>
+      <hr>
+      <div class="trip-detail">
+        <div class="trip-pic">
+          <img src="{{ this.data.imageUrl }}" alt="Trip">
+        </div>
+        <div class="trip-det">
+          <h4><strong>{{ this.data.title }}</strong></h4>
+          <p>Day of Travel: {{ this.data.date }}
+            <br>Number of Travellers: {{ this.data.count }}
+          </p>
+          <p>Free cancellation within 5 days of Booking</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 8%;">
+        <div class="trip-payit">
+          <span>Booking Fee:</span>
+          <span>₹0.00</span>
+        </div>
+        <div class="trip-payit">
+          <span>Subtotal:</span>
+          <span>${{ this.data.price * this.data.count }}</span>
+        </div>
+        <div class="trip-payit">
+          <span><strong>Total:</strong></span>
+          <span><strong>$ {{ this.data.price * this.data.count }}</strong></span>
+        </div>
+      </div>
+    </div>
+    <div class="gap">.</div>
+
+    <!-- book-card2 -->
+    <div class="book-card2">
+      <h1><strong>Book with confidence</strong></h1>
+      <hr>
+
+      <div class="conf1">
+        <div class="conf-icon">
+          <i class="bi bi-wallet2"></i>
+        </div>
+        <div class="conf-det">
+          <h4><strong>Lowest price guarantee</strong></h4>
+          <p>Find it cheaper? We'll refund the difference</p>
+        </div>
+      </div>
+
+      <div class="conf1">
+        <div class="conf-icon">
+          <i class="bi bi-lock-fill"></i>
+        </div>
+        <div class="conf-det">
+          <h4><strong>Privacy protection</strong></h4>
+          <p>We use SSL encryption to keep your data secure</p>
+        </div>
+      </div>
+
+      <div class="conf1">
+        <div class="conf-icon">
+          <i class="bi bi-headset"></i>
+        </div>
+        <div class="conf-det">
+          <h4><strong>24/7 global support</strong></h4>
+          <p>Get the answers you need, when you need them</p>
+        </div>
+      </div>
+
+      <div class="conf1">
+        <div class="conf-icon">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="conf-det">
+          <h4><strong>Give us a call</strong></h4>
+          <p>
+            We’d be happy to help you out with your booking,<br>
+            <a href="tel://000-0800-100-6999" style="color: black;">Call now: 000-0800-100-6999</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

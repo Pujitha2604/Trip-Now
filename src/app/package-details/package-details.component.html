@@ -1,0 +1,286 @@
+<!-- <div class="content-container">
+    <div class="images">
+        <div class="pdheading">
+            <h1>(Mysuru) Mysore Day Out - A Royal Experience Private Tour from Bangalore </h1>
+            <p>Recommended by 98% of travellers</p><br>
+        </div>
+        <div class="pdimage1">
+            <img src="../../assets/images/an1.jpg" style="border-radius: 20px;">
+        </div>
+        <div class="pdimage2">
+            <img src="../../assets/images/an2.jpg" style="border-radius: 20px;" alt="" width="450px" height="230px">
+        </div>
+        <div class="pdimage3">
+            <img src="../../assets/images/an3.jpg" style="border-radius: 20px;" alt="" width="450px" height="240px">
+            <button (click)="openPhotoGallery()"> See&nbsp;All&nbsp;Photos</button>
+        </div>
+    </div>
+    <div class="text">
+        <h2>About</h2>
+        <p>Design your own tour of Mysore with this private package from Bengaluru, which includes</p>
+        <p> round-trip transfers from your hotel, lunch, and guide services. You'll visit Mysore Palace</p>
+        <p> and Devraj Market along with either the Sane Museum and Somnathpur Temple, the Sand </p>
+        <p>Museum and the Chamundi Hills, or Dariya Daula and the Colonel Belly Dungeon.</p>
+    </div>
+    <div class="text1" style="padding: 25px;">
+        <h2>Reserve your spot</h2>
+        <div class="calendar-container">
+            <div class="calendar">
+                <label for="calendar">Choose date:</label>
+                <input type="date" id="calendar">
+            </div>
+            <div class="people-selection">
+                <span>Number of People:</span>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+        </div>
+        <div [ngClass]="{'selected': selectedDiv === 0, 'disabled': selectedDiv !== 0}" (click)="selectDiv(0)"
+            class="tripsel0">
+            <h3 style="font-size: 18px;">(Mysuru) Mysore Day Out - A Royal Experience Private Tour from Bangalore</h3>
+            <p><strong>Duration:</strong> 12 hours</p>
+            <p><strong>Lunch:</strong> Included</p>
+            <p><strong>Pickup:</strong> Included</p>
+            <p>(No additional taxes or booking fees)</p><br>
+        </div>
+
+        <div [ngClass]="{'selected': selectedDiv === 1, 'disabled': selectedDiv !== 1}" (click)="selectDiv(1)"
+            class="tripsel">
+            <h3 style="font-size: 18px; margin-bottom: 5px; line-height:23px;">Unveiling the Art of
+                Mysore Silk: A Journey from Bangalore to Explore Silk Weaving and the Magnificent Palace</h3>
+            <p><strong>Duration:</strong> 12 hours</p>
+            <p><strong>Lunch:</strong> Included</p>
+            <p><strong>Pickup:</strong> Included</p>
+            <p>(No additional taxes or booking fees)</p><br>
+        </div>
+        <button [routerLink]="['/booking-details']">Reserve Now</button>
+    </div>
+    <div class="guide">
+        <h3>from ₹11,107.82 per adult (price varies by group size)</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 30px;">
+            <text x="0" y="15">Ages 1-101</text>
+            <path
+                d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM609.3 512H471.4c5.4-9.4 8.6-20.3 8.6-32v-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2h61.4C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z" />
+        </svg>
+        <span>Ages 1-101</span><br>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 25px;">
+            <path
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+        </svg>
+        <span>Duration: 11-14 hours</span><br>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 25px;">
+            <path
+                d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+        </svg>
+        <span>Start Time : Check availability</span><br>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 25px;">
+            <path
+                d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z" />
+        </svg>
+        <span>Mobile Ticket</span><br>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 25px;">
+            <path
+                d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
+        </svg>
+        <span>Live guide: English</span>
+    </div>
+</div> -->
+
+<div class="content-container">
+    <!-- <p class="pd">DETAILS ABOUT THE PACKAGE</p> -->
+    <div class="images">
+        <div class="pdheading">
+            <!-- <h1>(Mysuru) Mysore Day Out - A Royal Experience Private Tour from Bangalore </h1> -->
+            <h1>{{ this.data.title }}</h1>
+            <p>Recommended by 98% of travellers</p><br>
+        </div>
+        <div class="pdimage1">
+            <!-- <img src="../../assets/images/an1.jpg" style="border-radius: 20px;"> -->
+            <img src="{{ this.data.imageUrl }}" style="border-radius: 20px; width: 722px; height: 486px;">
+        </div>
+        <div class="pdimage2">
+            <img src="../../assets/images/an2.jpg" style="border-radius: 20px;" alt="" width="450px" height="230px">
+        </div>
+        <div class="pdimage3">
+            <img src="../../assets/images/an3.jpg" style="border-radius: 20px;" alt="" width="450px" height="240px">
+            <button (click)="openPhotoGallery()"> See&nbsp;All&nbsp;Photos</button>
+        </div>
+    </div>
+    <div class="textabt">
+        <h2>About</h2>
+        <p>Design your own tour of Mysore with this private package from Bengaluru, which includes round trip transfers
+            from your hotel, lunch, and guide services. You'll visit Mysore Palace and Devraj Market along with either
+            the Sane Museum and Somnathpur Temple, the SandMuseum and the Chamundi Hills, or Dariya Daula and the
+            Colonel Belly Dungeon.</p>
+    </div>
+    <form class="text1" style="padding: 25px;" #f="ngForm">
+        <h2>Choose your Experience</h2>
+        <!-- Calendar -->
+        <div class="calendar-container">
+            <div class="calendar">
+
+                <label for="travelDate">Start Date:</label>
+            </div>
+            <div class="calendar">
+                <input type="date" [min]="minDate" [max] = "maxDate" [(ngModel)] = "this.inpDate" name="date" #dot = "ngModel" ngModel required ngNativeValidate>
+            </div>
+
+            <div class="calendar">
+                <label class="validate" *ngIf="dot.dirty && (dot.value < minDate || dot.value > maxDate)">Enter Valid Date</label>
+            </div>
+
+            <div class="people-selection">
+                <label>Number of People:</label>
+            </div>
+
+            <div class="people-selection">
+                <input name="count" type="number" [(ngModel)]="this.ppl" required min="1" max="10" ngModel ngNativeValidate #cnt="ngModel">
+            </div>
+            <div class="people-selection">
+                <label class="validate" *ngIf="cnt.dirty && cnt.value == null">Number of Travellers required.</label>
+                <label class="validate" *ngIf="cnt.dirty && cnt.value != null && cnt.invalid">Travellers Count, Min:1 - Max:10</label>
+            </div>
+        </div>
+        <!-- the experience toggle -->
+
+        <div [ngClass]="{'selected': this.selectedDiv === 0, 'disabled': this.selectedDiv !== 0}"
+            class="tripsel0" (click)="selectDiv(this.data.id)">
+            <h3 style="font-size: 18px;">{{ this.data.title }}</h3>
+            <p><strong>Duration:</strong> 12 hours</p>
+            <p><strong>Pickup:</strong> Included</p>
+            <p>(No additional taxes or booking fees)</p><br>
+        </div>
+
+        <div [ngClass]="{'selected': this.selectedDiv === 1, 'disabled': this.selectedDiv !== 1}"
+            class="tripsel" (click)="selectDiv(this.data.id)">
+            <h3 style="font-size: 18px; margin-bottom: 5px; line-height:23px;">Exclusive Journey</h3>
+            <p><strong>Duration:</strong> 24 hours</p>
+            <p><strong>Food:</strong> Included (3 Times a Day)</p>
+            <p><strong>Pickup:</strong> Included</p>
+            <p>(No additional taxes or booking fees)</p><br>
+        </div>
+        <button (click)="pushData()" [disabled]="(dot.value < minDate || dot.value > maxDate || !f.valid)">Book Now</button>
+    </form>
+
+    <div class="guide">
+        <h3>from <span class="price">${{ this.data.price }} </span> per adult (price varies by group size)</h3>
+    </div>
+
+    <div class="info">
+        <span class="feature">
+            <!-- <span class="action" role="button" tabindex="0" (click)="showPopup('lowest-price')"> -->
+            <span class="action" role="button" tabindex="0" (click)="openLowestPriceDialog()">
+                <span class="text">Lowest price guarantee</span>
+            </span>
+            <span class="feature">
+                <span class="action" role="button" tabindex="0" (click)="openrap()">
+                    <span class="text">Reserve now &amp; pay later</span>
+                </span>
+            </span>
+            <span class="feature">
+                <span class="action" role="button" tabindex="0" (click)="opencancel()">
+                    <span class="text">Free cancellation</span>
+                </span>
+            </span>
+        </span>
+    </div>
+    <div class="masguide">
+        <div class="guide1">
+            <div class="guide-content">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 30px;">
+                    <path
+                        d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM609.3 512H471.4c5.4-9.4 8.6-20.3 8.6-32v-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2h61.4C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z" />
+                </svg>
+                <span>Ages 1-101</span>
+            </div>
+        </div>
+        <div class="guide2">
+            <div class="guide-content">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 25px;">
+                    <path
+                        d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+                </svg>
+                <span>Duration: 11-14 hours</span>
+            </div>
+        </div>
+
+        <div class="guide3">
+            <div class="guide-content">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 25px;">
+                    <path
+                        d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                </svg>
+                <span>Start Time : Check availability</span>
+            </div>
+        </div>
+
+        <div class="guide4">
+            <div class="guide-content">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 25px;">
+                    <path
+                        d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z" />
+                </svg>
+                <span>Mobile Ticket</span>
+            </div>
+        </div>
+
+        <div class="guide5">
+            <div class="guide-content">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 25px;">
+                    <path
+                        d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
+                </svg>
+                <span>Live guide: English</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<mat-expansion-panel style="box-shadow: none;">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h1>What's included </h1>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>This is the content of the panel.</p>
+</mat-expansion-panel>
+
+<mat-expansion-panel style="box-shadow: none;">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h1>What to expect</h1>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>This is the content of the panel.</p>
+</mat-expansion-panel>
+
+<mat-expansion-panel style="box-shadow: none;">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h1>Departure and return
+            </h1>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>This is the content of the panel.</p>
+</mat-expansion-panel>
+
+<mat-expansion-panel style="box-shadow: none;">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h1>Additional Information</h1>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>This is the content of the panel.</p>
+</mat-expansion-panel>
+
+<mat-expansion-panel style="box-shadow: none;">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h1>Help</h1>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>This is the content of the panel.</p>
+</mat-expansion-panel>

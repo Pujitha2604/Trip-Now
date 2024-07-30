@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="heading">
+        <h2 mat-dialog-title>Photos of (Mysuru) Mysore Day Out - A Royal Experience Private Tour from Bangalore</h2>
+        <div class="top">
+            <div class="circle">
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="num">148</div>
+        </div>
+        <hr class="solid-line">
+    </div>
+    <mat-dialog-content class="dialog-content">
+        <div class="images">
+            <!-- <div class="main-images">
+                <h1>Albums</h1>
+                <div class="pic">
+                    <div class="row">
+                        <div *ngFor="let img of image.slice(0, 2)" class="image">
+                            <img [src]="img.imageUrl" alt="Image">
+                            <div class="image-text">
+                                <p>{{ img.title }}</p>
+                                <p>{{ img.num }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div *ngFor="let img of image.slice(2)" class="image">
+                            <img [src]="img.imageUrl" alt="Image">
+                            <div class="image-text">
+                                <p>{{ img.title }}</p>
+                                <p>{{ img.num }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+            <div class="gallery">
+                <gallery [items]="images" thumbPosition="left"></gallery>
+            </div>
+        </div>
+    </mat-dialog-content>
+
+    <div class="close-container">
+        <button mat-icon-button (click)="closeGallery()">
+            <mat-icon aria-label="Close dialog">close</mat-icon>
+        </button>
+    </div>
+</div>
