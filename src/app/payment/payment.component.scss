@@ -1,0 +1,108 @@
+.top-bread{
+    display: flex;
+    justify-content: center;
+    padding-top: 22px;
+    font-size: 2.4em;
+}
+
+.back {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    cursor: pointer;
+}
+
+.cur{
+    font-weight: bold;
+}
+
+.middle-book{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.payment-head h1{
+    margin-top: 2.7%;
+    font-size: 2.7em;
+}
+
+.payment-detail{
+    width: 55%;
+}
+
+.book-card{
+    width: 35%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-det{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-cond{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pay{
+    margin-bottom: 2%;
+    width: 60%;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+    /* margin: ; */
+}
+
+.trip-pic{
+    height: 140px;
+    width: 100%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.trip-pic img{
+    height: 120%;
+    width: 80%;
+}
+
+.trip-payit{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+
+.trip-det{
+    margin-top: 12%;
+}
+
+.book-card1{
+    padding: 5%;
+    height: 99%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.middle-book p{
+    margin: 9px 0 7px;
+    font-size: 1.3em;
+}

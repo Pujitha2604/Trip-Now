@@ -1,0 +1,52 @@
+<div class="main">
+    <!-- <div class="banner">
+        <img src="./assets/images/106294131-1576211589402gettyimages-913987230.jpeg">
+    </div> -->
+    <section class="packages" id="packages">
+        <div class="pacheading">
+            <h1>The Best Road Trips in India</h1>
+            <p>From breathtaking valleys to the most challengings roads</p>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search by State or City" [(ngModel)]="filterText"
+                (ngModelChange)="filterBoxes()">
+            <span class="search-icon"></span>
+        </div>
+        
+        
+        <div class="box-container">
+            <div class="plchol" *ngIf="filteredBoxes.length === 0">
+                <h2>No destinations</h2>
+                <p>Sorry, no destinations match your Search.</p>
+            </div>
+            <div *ngFor="let box of filteredBoxes" class="box">
+                <a>
+                    <div class="image">
+                        <img style="width: 100%;"[src]="box.imageUrl" alt="">
+                        <!-- wishlist feature removed -->
+                        <!-- <div class="save">
+                            <i class="fas fa-heart"></i>
+                        </div> -->
+                    </div>
+                    <div class="content">
+                        <p>{{ box.title }}</p>
+                        <h3>{{box.description}}</h3>
+                        <div class="bottom">
+                            <div class="stars">
+                                <i class="fas fa-star fa-2x"></i>
+                                <i class="fas fa-star fa-2x"></i>
+                                <i class="fas fa-star fa-2x"></i>
+                                <i class="fas fa-star fa-2x"></i>
+                                <i class="far fa-star fa-2x"></i>
+                            </div>
+                            <div class="num">{{ box.likes }}</div>
+                        </div>
+                    </div>
+                   
+                   
+                </a>
+            </div>
+        </div>
+    </section>
+</div>

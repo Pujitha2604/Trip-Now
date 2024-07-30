@@ -1,0 +1,218 @@
+*{
+    font-family: "Nunito"
+}
+
+.top-bread{
+    display: flex;
+    justify-content: center;
+    padding-top: 22px;
+    font-size: 2.5em;
+}
+
+.back {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.3em;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    cursor: pointer;
+}
+
+.middle-book{
+    margin-top: 3%;
+}
+
+.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.cur{
+    font-weight: bold;
+}
+
+.middle-book{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: space-around;
+}
+
+.user-detail{
+    /* border: red 1px solid; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-head{
+    margin-left: 5%;
+}
+
+.name-head,.label-head{
+    display: flex;
+    justify-content: space-around;
+}
+
+.label-head label{
+    padding-right: 30.5%;
+}
+
+.name{
+    width: 40%;
+}
+
+.email{
+    width: 90%;
+    margin-left: 5.25%;
+}
+
+.phno{
+    margin-left: 5%;
+    width: 40%;
+}
+
+.gap{
+    width: 100%;
+    height: 5%;
+    color: white;
+}
+
+.promo{
+    margin-top: 5%;
+    margin-left: 5.25%;
+}
+
+.promo h1{
+    margin-bottom: 0;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-btn:hover{
+    background-color: #545454;
+    transition: 0.5s ease-in-out;
+}
+
+.contact-btn,.contact-btn:disabled{
+    margin: 5%;
+    margin-left: 5%;
+    font-size: 1.5em;
+    padding: 1% 10%;
+    border-radius: 17%;
+    color: white;
+    background-color: black;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+input{
+    padding-left: 1%;
+}
+
+.book-card{
+    /* border: yellow 1px solid; */
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-card1,.book-card2{
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 3%;
+    height: 42%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.book-card2{
+    height: 45%;
+}
+
+.trip-detail{
+    display: flex;
+    justify-content: space-around;
+}
+
+.trip-pic{
+    /* border: 1px solid green; */
+    width: 130px;
+    height: 110px;
+}
+
+.trip-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.trip-det{
+    width: 60%;
+}
+
+.trip-payit{
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+    font-size: 1.3em;
+}
+
+input{
+    border: #e0e0e0 2px solid;
+    border-radius: 4px;
+    height: 3em;
+    font-size: 1.3em;
+}
+
+.conf1{
+    display: flex;
+    justify-content:start;
+}
+
+.conf-icon{
+    margin-left: 2%;
+    width: 12%;
+}
+
+.conf-det h4{
+    margin-bottom: 2.5%;
+}
+
+.error-head{
+    display: flex;
+    justify-content: space-around;
+}
+
+.name-error{
+    width: 40%;
+}
+
+.help-block{
+    color: red;
+    font-size: 1.1em;
+}
+
+.bi{
+    font-size: 2.4em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+label{
+    font-size: 1.2em;
+}

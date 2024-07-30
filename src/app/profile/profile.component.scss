@@ -1,0 +1,261 @@
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px;
+}
+ 
+ 
+.back {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+}
+ 
+ 
+.account i {
+    color: #000;
+}
+ 
+h1 {
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1;
+}
+ 
+.spacer {
+    flex-grow: 1;
+}
+ 
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+button:hover {
+    background-color: #0056b3;
+}
+ 
+.signedindetails {
+    padding: 40px;
+    display: flex;
+}
+ 
+.profilepic {
+    margin-right: 40px;
+    font-size: 150px;
+    display: inline-flex;
+    height: 0;
+    color: rgba(0, 0, 0, 0.477);
+ 
+}
+ 
+h1 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+ 
+p {
+    font-size: 20px;
+    color: #7b7b7b;
+    display: inline;
+    margin-bottom: 25px;
+}
+ 
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+ 
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+   
+}
+ 
+h3 {
+    // text-align: center;
+    font-weight: 500;
+    // padding: 200px 0;
+    font-size: 20px;
+    color: #00000067;
+}
+ 
+header .icons i {
+    font-size: 2.5rem;
+    color: #000000;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+ 
+  header .icons i:hover {
+    color: white;
+  }
+ 
+  .box-container .box .content .bottom .stars {
+    display: flex;
+    cursor: pointer;
+  }
+   
+  .box-container .box .content .bottom .stars .fa-star {
+    color: gold;
+    margin-right: 2px;
+  }
+ 
+  .box-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    border: 1px green;
+    grid-template-columns: repeat(4, 1fr);
+  }
+   
+  .box-container .box {
+    width: calc(33.333% - 2rem);
+    height: 430px;
+    border-radius: 10px;
+ 
+    overflow: hidden;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+   .box-container .box:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+   
+   
+  .box-container .box .image {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+  }
+   
+  .box-container .box .image .save {
+    position: absolute;
+    display: flex;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+  }
+   
+  .box-container .box .image .save:hover {
+    transform: scale(1.2);
+  }
+   
+  .box-container .box .content {
+    padding: 10px 20px;
+  }
+ 
+  .box-container .box .content p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #080808;
+    padding: 10px 0;
+    text-align: left;
+  }
+   .box-container .box .content h3 {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #080808;
+    padding: 10px 0;
+    text-align: left;
+  }
+ 
+   
+  .box-container .box .content .bottom {
+    display: flex;
+  }
+   
+   .box-container .box .content .bottom .num {
+    margin-left: 10px;
+    margin-top: 4px;
+  }
+ 
+  .box{
+    cursor: pointer;
+  }
+ 
+  .box-container2 .box2 .content2 .bottom2 .stars2 .fa-star {
+    color: gold;
+    margin-right: 2px;
+  }
+ 
+  .box-container2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    border: 1px green;
+    grid-template-columns: repeat(4, 1fr);
+  }
+   
+  .box-container2 .box2 {
+    width: calc(33.333% - 2rem);
+    height: 430px;
+    border-radius: 10px;
+ 
+    overflow: hidden;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+   .box-container2 .box2:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+   
+   
+  .box-container2 .box2 .image2 {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+  }
+   
+  .box-container2 .box2 .content2 {
+    padding: 10px 20px;
+  }
+ 
+  .box-container2 .box2 .content2 p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #080808;
+    padding: 10px 0;
+    text-align: left;
+  }
+   .box-container2 .box2 .content2 h3 {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #080808;
+    padding: 10px 0;
+    text-align: left;
+  }
+ 
+   
+  .box-container2 .box2 .content2 .bottom2 {
+    display: flex;
+  }
+   
+   .box-container2 .box2 .content2 .bottom2 .num2 {
+    margin-left: 10px;
+    margin-top: 4px;
+  }
